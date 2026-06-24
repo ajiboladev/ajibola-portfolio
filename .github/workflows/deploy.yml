@@ -23,7 +23,9 @@ jobs:
 
       - run: flutter pub get
 
-      - run: flutter build web --release
+      - run: flutter build web --release --base-href=/portfolio/
+
+      - run: touch build/web/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3
         with:
