@@ -23,7 +23,7 @@ jobs:
 
       - run: flutter pub get
 
-      - run: flutter build web --release --base-href=/portfolio/
+      - run: flutter build web --release --base-href /ajibola-portfolio/
 
       - run: touch build/web/.nojekyll
 
